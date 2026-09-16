@@ -1,0 +1,14 @@
+﻿# Local documents, backups and papers
+_local_docs/
+_raw_videos_backup/
+*.pdf
+
+# Temp and scratch directories
+tmp/
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

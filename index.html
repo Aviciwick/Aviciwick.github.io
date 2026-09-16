@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tianshuai Jiang (姜天率) · Academic Homepage & Embodied AI Portfolio: 3D Point Cloud Semantic Segmentation, Heterogeneous Air-Ground Swarm Robotics, Quadruped & Humanoid Locomotion and Manipulation.">
+  <meta name="theme-color" content="#06171d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tianshuai Jiang (姜天率) · Academic Homepage & Robotics Portfolio">
+  <meta property="og:description" content="Large-scale 3D Point Cloud Perception, Air-Ground Swarm Inspection, Quadruped and Humanoid Dynamic Locomotion & Manipulation.">
+  <meta property="og:image" content="assets/posters/bsrnet-pointcloud.webp">
+  <title>Tianshuai Jiang (姜天率) · Robotics Perception & Embodied AI Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Tianshuai Jiang Homepage">
+        <img src="Tianshuai_Jiang.jpg" alt="Tianshuai Jiang" class="brand-avatar">
+        <div class="brand-title">
+          <span class="brand-name">Tianshuai Jiang</span>
+          <span class="brand-sub">Robotics & 3D Perception</span>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#work">核心项目与演示</a>
+        <a href="#research">学术论文与专利</a>
+        <a href="#skills">技能与设备栈</a>
+        <a href="#about">教育与荣誉</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero / Profile Section -->
+    <section class="section hero" id="hero">
+      <div class="section-shell">
+        <div class="hero-grid">
+          <div class="hero-intro reveal">
+            <span class="hero-tag">Embodied AI & 3D Perception Researcher</span>
+            <h1>Tianshuai Jiang <span class="highlight" style="font-size: 0.72em; font-weight: 700; color: var(--teal); margin-left: 6px;"></span></h1>
+            <p class="hero-lead">
+              浙江科技大学机械工程硕士在读，本科毕业于海南大学软件工程专业。核心研究方向聚焦于<strong>大规模 3D 点云语义感知</strong>、<strong>空地异构多机协同自主巡检</strong>、<strong>四足与人形机器人高动态运控及灵巧操作</strong>。兼具前沿算法理论探索与真实非结构化场景软硬件系统落地能力。
+            </p>
+            <div class="hero-badges">
+              <span class="hero-badge"><strong>学历</strong> 硕士在读 (ZUST)</span>
+              <span class="hero-badge"><strong>第一作者</strong> Neurocomputing (在投)</span>
+              <span class="hero-badge"><strong>国家电网</strong> 合作重点项目核心开发</span>
+              <span class="hero-badge"><strong>省林科院</strong> “尖兵·领雁”项目核心开发</span>
+              <span class="hero-badge"><strong>发明专利</strong> 2项申请 (实质审查)</span>
+              <span class="hero-badge"><strong>英语能力</strong> CET-6 513分</span>
+              <span class="hero-badge"><strong>政治面貌</strong> 中共党员</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                浏览实机演示视频
+              </a>
+              <a class="btn btn-secondary" href="#research">学术成果与专利</a>
+              <a class="btn btn-secondary" href="mailto:aviciwick@gmail.com" target="_blank" rel="noopener">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                aviciwick@gmail.com
+              </a>
+              <a class="btn btn-secondary" href="https://github.com/Aviciwick" target="_blank" rel="noopener">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <h2 class="hero-card-title">Education & Background</h2>
+            <div class="edu-item">
+              <div class="edu-header">
+                <span class="edu-school">浙江科技大学 (ZUST)</span>
+                <span class="edu-date">2024.09 -- 至今</span>
+              </div>
+              <div class="edu-major">机械工程 · 工学硕士</div>
+              <div class="edu-courses">主修：数字图像处理、神经网络与机器学习、大数据分析与应用、最优化方法、嵌入式系统、智能控制理论</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-header">
+                <span class="edu-school">海南大学 (Hainan University)</span>
+                <span class="edu-date">2020.09 -- 2024.06</span>
+              </div>
+              <div class="edu-major">软件工程 · 工学学士</div>
+              <div class="edu-courses">主修：数据结构与算法、机器学习、计算机视觉、程序设计基础、操作系统、数据库系统原理、Web系统架构</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll down indicator cue -->
+      <div class="hero-scroll-hint" id="heroScrollHint">
+        <a href="#work" class="scroll-hint-link" aria-label="向下滚动探索核心项目与实机演示">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">SCROLL TO EXPLORE</span>
+          <svg class="scroll-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 1: Featured Projects & Videos -->
+    <section class="section section-work section-shell" id="work">
+      <header class="section-heading reveal">
+        <p class="section-index">01 / SELECTED PROJECTS & DEMOS</p>
+        <div>
+          <h2>核心项目与实机演示</h2>
+        </div>
+      </header>
+
+      <!-- =========================================================================
+           TOP 4 FEATURED PROJECTS (Sequential, uniform 16:9 scale and aspect ratio)
+           1. 3D 大规模点云语义分割网络
+           2. 异构四足机器狗统一高动态运控
+           3. 人形机器人全身协调移动操作
+           4. 配电房与机房车狗协同巡检管控
+           ========================================================================= -->
+
+      <!-- Featured Project 1: BSRNet 3D Point Cloud -->
+      <article class="project project-featured reveal">
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/bsrnet.webp">
+            <source src="BSRnet.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放。
+          </video>
+          <span class="video-duration">02:37</span>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 01 / 3D POINT CLOUD SEGMENTATION</p>
+          <h3>3D 大规模点云语义分割网络</h3>
+          <p class="project-en">BSRNet: Boundary-Sensitive Refinement Network for Semantic Segmentation of Large-Scale Point Clouds</p>
+          <p>针对超点跨越物体边界、混合不同语义导致的分割误差，独立完成 BSRNet 的方法设计、代码实现与实验评估。设计边界先验选择器 BPS，将细化预算集中于潜在混合超点；通过局部槽细化模块 PSMR 与选择性一致性学习 SCL 修正点级预测，在保持原超点划分与图结构的基础上，兼顾边界精度与计算效率。</p>
+          <ul class="metric-list">
+            <li><strong>+1.8 pp</strong><span>DALES mIoU · 相比 SPT</span></li>
+            <li><strong>+4.3 pp</strong><span>DALES 边界 IoU · 相比 SPT</span></li>
+            <li><strong>0.30M</strong><span>模型总参数量</span></li>
+          </ul>
+          <div class="tag-row">
+            <span>3D Point Cloud</span><span>Superpoint Transformer</span><span>BPS</span><span>PSMR</span><span>SCL</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-meta-badge">Neurocomputing (在投) · 第一作者</span>
+            <span>2026</span>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Featured Project 2: DA-MoE Quadruped Dynamic Locomotion -->
+      <article class="project project-featured project-reverse reveal">
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 02 / EMBODIED AI · QUADRUPED CONTROL</p>
+          <h3>四足机器人多姿态统一运动策略</h3>
+          <p class="project-en">Unified Heterogeneous Quadrupedal Locomotion via a Domain-Auxiliary Mixture of Experts (DA-MoE)</p>
+          <p>参与四足机器人多姿态统一控制项目。针对四足、正立与倒立联合训练中的模式干扰与更新不均衡，团队提出 DA-MoE 策略：以域专家保留模式专用能力、稀疏辅助专家共享跨模式经验，结合 RC-FiLM 路由条件动作调制与分模式优势归一化 MAN，实现单一策略下的三模式运动、在线切换与跌倒恢复，并完成仿真及实机验证。</p>
+          <ul class="metric-list">
+            <li><strong>DA-MoE</strong><span>域专家与稀疏辅助专家协同</span></li>
+            <li><strong>RC-FiLM</strong><span>路由条件下的动作维度校正</span></li>
+            <li><strong>MAN</strong><span>分模式优势归一化</span></li>
+          </ul>
+          <div class="tag-row">
+            <span>强化学习</span><span>PPO</span><span>Mixture of Experts</span><span>多模式控制</span><span>Sim-to-Real</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-meta-badge">IEEE RA-L (在投) · 项目参与</span>
+            <span>2026</span>
+          </div>
+        </div>
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/da-moe.webp">
+            <source src="DA_MoE_Supplementary_Video.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放。
+          </video>
+          <span class="video-duration">02:10</span>
+        </div>
+      </article>
+
+      <!-- Featured Project 3: HolisticVLA Humanoid Loco-Manipulation -->
+      <article class="project project-featured reveal">
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/holistic-vla.webp">
+            <source src="HolisticVLA_Supplementary_Video.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放。
+          </video>
+          <span class="video-duration">03:06</span>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 03 / HUMANOID LOCO-MANIPULATION</p>
+          <h3>人形机器人全身协调移动操作</h3>
+          <p class="project-en">HolisticVLA: Force-Aware and Task-Stage-Guided Humanoid Loco-Manipulation</p>
+          <p>参与 Unitree G1 人形机器人移动操作项目。团队提出 HolisticVLA 分层策略，通过多尺度力觉—语义融合建模手部关节力矩与接触状态，以任务阶段预测引导行走、下蹲与操作之间的动作衔接；底层结合两阶段强化学习、性能驱动的扰动课程和指令平滑转换，协调上肢目标跟踪与下肢稳定，在按键、取放及多阶段柜体操作中验证。</p>
+          <ul class="metric-list">
+            <li><strong>MSFSI</strong><span>手部力矩与视觉语言特征融合</span></li>
+            <li><strong>TSP</strong><span>任务阶段引导动作生成</span></li>
+            <li><strong>FA-WBC</strong><span>扰动课程与全身运动跟踪</span></li>
+          </ul>
+          <div class="tag-row">
+            <span>Unitree G1</span><span>VLA</span><span>力觉融合</span><span>任务阶段预测</span><span>全身控制</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-meta-badge">IEEE RA-L (在投) · 项目参与</span>
+            <span>2026</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Featured Project 4: State Grid Substation & Datacenter Inspection -->
+      <article class="project project-featured project-reverse reveal">
+        <div class="project-copy">
+          <p class="project-number">FEATURED · 04 / FIELD ROBOTICS · STATE GRID</p>
+          <h3>配电房与机房车狗协同巡检管控</h3>
+          <p class="project-en">Collaborative Wheeled-Quadruped Inspection & Monitoring in Substations and Datacenters</p>
+          <p>参与国家电网合作巡检项目，面向配电房与机房的设备检查需求，结合轮式机器人与四足平台开展巡检作业。项目围绕巡检任务执行、门禁联动及双光云台采集，组织可见光图像与红外测温结果，支持设备状态查看与异常记录，并配套管控平台完成任务下发和结果汇总。</p>
+          <ul class="metric-list">
+            <li><strong>车狗协同</strong><span>轮式与四足平台巡检作业</span></li>
+            <li><strong>双光采集</strong><span>可见光图像与红外测温</span></li>
+            <li><strong>设备联动</strong><span>门禁与巡检任务衔接</span></li>
+          </ul>
+          <div class="tag-row">
+            <span>车狗协同</span><span>设备巡检</span><span>红外测温</span><span>门禁联动</span><span>Unitree B2</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-meta-badge">国家电网合作项目 · 项目参与</span>
+            <span>2025 -- 2026</span>
+          </div>
+        </div>
+        <div class="video-frame">
+          <video controls playsinline preload="none" poster="assets/posters/dayou.webp">
+            <source src="dayou.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放。
+          </video>
+          <span class="video-duration">03:14</span>
+        </div>
+      </article>
+
+      <!-- =========================================================================
+           BOTTOM 4 PROJECTS (2 Rows x 2 Columns Grid Layout)
+           5. 机械臂杂乱试管避碰抓取与分拣
+           6. 四足机器人头部夹具指令自主交互夹取
+           7. 油茶林病虫害地空协同检测系统
+           8. 智慧茶园无人机—机器狗协同巡检
+           ========================================================================= -->
+
+      <div class="sub-heading reveal">
+        <p class="section-index">01.2 / COLLABORATIVE & EMBODIED ROBOTIC SYSTEMS (2×2 GRID)</p>
+        <h3>机械臂操作、头部夹具交互与大范围空地协同巡检</h3>
+        <p>涵盖杂乱试管推抓分拣、四足平台移动抓取，以及油茶林和茶园场景中的空地协同巡检。</p>
+      </div>
+
+      <div class="project-grid-2x2">
+        <!-- Project 5 (Row 1, Col 1): 机械臂杂乱试管避碰抓取与分拣 -->
+        <article class="grid-card reveal">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="assets/posters/graspnet.webp">
+              <source src="graspnet.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频播放。
+            </video>
+            <span class="video-duration">01:47</span>
+          </div>
+          <div class="grid-card-body">
+            <p class="project-number">05 · ROBOTIC ARM / VISUAL GRASPING</p>
+            <h3>机械臂杂乱试管避碰抓取与分拣</h3>
+            <p class="grid-card-en">Pixel-Level Collision-Free Grasping for Medical Tube Sorting on Cluttered Trays</p>
+            <p>参与杂乱试管视觉抓取项目。方案以 RGB 图像为输入，结合 REASP 多尺度特征提取与 AGFC 抓取表示，联合预测抓取质量、类别、角度和夹爪宽度；根据可抓取、碰撞风险及需推移的类别选择动作，在间隙不足时先推移再重新检测，形成感知驱动的推抓流程，并在 XArm6 平台验证。</p>
+            <div class="tag-row">
+              <span>XArm6</span><span>REASP</span><span>AGFC</span><span>像素级抓取</span><span>推抓动作选择</span>
+            </div>
+            <div class="project-meta">
+              <span>相关论文发表于 IEEE RA-L · 项目参与</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 (Row 1, Col 2): 四足机器人头部夹具指令自主交互夹取 -->
+        <article class="grid-card reveal">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="assets/posters/doggybot.webp">
+              <source src="helpful_doggybot.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频播放。
+            </video>
+            <span class="video-duration">01:08</span>
+          </div>
+          <div class="grid-card-body">
+            <p class="project-number">06 · EMBODIED MANIPULATION / INTERACTION</p>
+            <h3>四足机器人头部夹具指令自主交互夹取</h3>
+            <p class="grid-card-en">Vision-Language Commanded Mobile Manipulation with Quadruped Mouth Gripper</p>
+            <p>参与四足机器人头部夹具移动操作项目，基于 Helpful DoggyBot 构型，将语言指令、RGB-D 目标定位与夹具动作串联，用于室内物体拾取。项目围绕目标位置与机器人接近动作的衔接，协调机身移动、头部对准和夹具开合，展示四足平台结合轻量夹具完成移动抓取的过程。</p>
+            <div class="tag-row">
+              <span>Helpful DoggyBot</span><span>头部夹具</span><span>RGB-D 定位</span><span>语言指令</span><span>移动抓取</span>
+            </div>
+            <div class="project-meta">
+              <span>移动操作项目 · 项目参与</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7 (Row 2, Col 1): 油茶林病虫害地空协同检测系统 -->
+        <article class="grid-card reveal">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="assets/posters/youcha.webp">
+              <source src="youcha_patrol.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频播放。
+            </video>
+            <span class="video-duration">03:45</span>
+          </div>
+          <div class="grid-card-body">
+            <p class="project-number">07 · AIR-GROUND SWARM / FORESTRY ROBOTICS</p>
+            <h3>油茶林病虫害地空协同检测系统</h3>
+            <p class="grid-card-en">Air-Ground Collaborative Pest & Disease Detection System in Camellia Oleifera Forests</p>
+            <p>参与浙江省林业科学研究院合作项目，面向油茶林病虫害巡查，将无人机巡查与四足机器人近距离采集相结合，补充不同观察距离与视角下的图像信息。项目围绕巡查数据采集、病虫害检测与结果定位展开，配套数据传输及结果展示，为林区病虫害排查提供图像与位置记录。</p>
+            <div class="tag-row">
+              <span>省林科院合作</span><span>病虫害检测</span><span>图像采集</span><span>空地协同</span><span>巡查记录</span>
+            </div>
+            <div class="project-meta">
+              <span>省林科院合作项目 · 项目参与</span>
+              <span>2025 -- 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8 (Row 2, Col 2): 智慧茶园无人机—机器狗协同巡检 -->
+        <article class="grid-card reveal">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="assets/posters/chayan.webp">
+              <source src="chayan_patrol.mp4" type="video/mp4">
+              你的浏览器不支持 HTML5 视频播放。
+            </video>
+            <span class="video-duration">01:20</span>
+          </div>
+          <div class="grid-card-body">
+            <p class="project-number">08 · MULTI-ROBOT COLLABORATION / AGRICULTURE</p>
+            <h3>智慧茶园无人机—机器狗协同巡检</h3>
+            <p class="grid-card-en">Heterogeneous Aerial-Ground Drone-Quadruped Inspection in Smart Tea Plantations</p>
+            <p>参与茶园空地协同巡检项目，结合无人机航测与四足机器人地面巡查，获取茶园整体环境及局部作业区域的信息。项目围绕航测建图、巡检任务组织与地面图像采集展开，通过现场联调衔接两类平台的作业流程，并汇总巡检数据用于查看与回溯。</p>
+            <div class="tag-row">
+              <span>茶园巡检</span><span>空地协同</span><span>航测建图</span><span>任务组织</span><span>地面采集</span>
+            </div>
+            <div class="project-meta">
+              <span>茶园协同巡检 · 项目参与</span>
+              <span>2025 -- 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: Research & Patents -->
+    <section class="section section-dark" id="research">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light reveal">
+          <p class="section-index">02 / PUBLICATIONS & PATENTS</p>
+          <div>
+            <h2>学术论文与发明专利</h2>
+            <p>深耕 3D 点云语义感知、空地协同巡检与多模态机器人智能控制，注重扎实数学建模、算法理论创新与真实机器人系统工程落地。</p>
+          </div>
+        </header>
+
+        <div class="research-list">
+          <!-- Item 1: BSRNet (一作) -->
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div>
+              <span class="research-badge badge-first">SCI 期刊 · 第一作者 · 在投</span>
+              <h3>BSRNet: Boundary-Sensitive Refinement Network for Semantic Segmentation of Large-Scale Point Clouds</h3>
+              <p class="research-author"><strong>Tianshuai Jiang (姜天率)</strong>, et al. · Submitted to <em>Neurocomputing</em> (SCI, Under Review)</p>
+              <p class="research-desc">提出固定超点划分下的选择性边界细化网络，结合 BPS、PSMR 与 SCL，在三个室外基准上相比 SPT 提升 mIoU 1.8–2.3 个百分点、边界 IoU 3.7–4.3 个百分点。</p>
+            </div>
+            <span style="color: var(--lime); font-size: 20px;">↗</span>
+          </article>
+
+          <!-- Item 2: 专利 1 (点云渲染) -->
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div>
+              <span class="research-badge badge-patent">发明专利 · 实质审查</span>
+              <h3>一种点云渲染方法及系统</h3>
+              <p class="research-author"><strong>Tianshuai Jiang (姜天率)</strong>, 等 · 申请号：202610569983 · 发明专利</p>
+              <p class="research-desc">发明面向非结构化大场景的三维点云高效视距自适应渲染技术，为多模态模型视觉嵌入提供高质量空间几何投影输入。</p>
+            </div>
+            <span style="color: var(--mint); font-size: 20px;">⚙</span>
+          </article>
+
+          <!-- Item 3: 专利 2 (全天空注意力金字塔) -->
+          <article class="research-item reveal">
+            <span class="research-year">2024</span>
+            <div>
+              <span class="research-badge badge-patent">发明专利 · 实质审查</span>
+              <h3>一种基于注意力金字塔网络的全天空图像检测和分类方法</h3>
+              <p class="research-author"><strong>Tianshuai Jiang (姜天率)</strong>, 等 · 申请号：2024116316065 · 发明专利</p>
+              <p class="research-desc">基于多尺度注意力机制的金字塔特征融合网络，解决全景鱼眼视野中云层微弱特征识别与全天空图像全自动分类难题。</p>
+            </div>
+            <span style="color: var(--mint); font-size: 20px;">⚙</span>
+          </article>
+
+          <!-- Item 4: DA-MoE (协同) -->
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div>
+              <span class="research-badge badge-collab">IEEE RA-L · 共同作者 · 在投</span>
+              <h3>Unified Heterogeneous Quadrupedal Locomotion via a Domain-Auxiliary Mixture of Experts Policy</h3>
+              <p class="research-author">Co-authored · Submitted to <em>IEEE Robotics and Automation Letters (RA-L)</em> (2026)</p>
+              <p class="research-desc">结合域专家与稀疏辅助专家、路由条件动作调制及分模式优势归一化，实现四足、正立与倒立统一控制；仿真平均成功率 84.3%，模式切换成功率 86.4%。</p>
+            </div>
+            <span style="color: rgba(255,255,255,0.4); font-size: 20px;">↗</span>
+          </article>
+
+          <!-- Item 5: HolisticVLA (协同) -->
+          <article class="research-item reveal">
+            <span class="research-year">2026</span>
+            <div>
+              <span class="research-badge badge-collab">IEEE RA-L · 共同作者 · 在投</span>
+              <h3>Humanoid Loco-Manipulation with Force Awareness and Task Stage Guidance for Contact-Rich Dexterous Interaction</h3>
+              <p class="research-author">Co-authored · Submitted to <em>IEEE Robotics and Automation Letters (RA-L)</em> (2026)</p>
+              <p class="research-desc">HolisticVLA 融合手部力矩时序与视觉语言特征，以任务阶段预测引导动作生成，结合 FA-WBC 完成全身执行；论文报告四类实机任务平均成功率 78%（每类 25 次评估）。</p>
+            </div>
+            <span style="color: rgba(255,255,255,0.4); font-size: 20px;">↗</span>
+          </article>
+
+          <!-- Item 6: GraspNet (协同) -->
+          <article class="research-item reveal">
+            <span class="research-year">2023</span>
+            <div>
+              <span class="research-badge badge-collab">IEEE RA-L · 已发表 · 相关论文</span>
+              <h3>Pixel-Level Collision-Free Grasp Prediction Network for Medical Test Tube Sorting on Cluttered Trays</h3>
+              <p class="research-author">Shihao Ge, Beiping Hou, Wen Zhu, Yuzhen Zhu, Senjian Lu, Yangbin Zheng · <em>IEEE Robotics and Automation Letters (RA-L)</em> (2023)</p>
+              <p class="research-desc">通过 REASP 多尺度特征提取与 AGFC 类别化抓取表示，驱动推移与抓取动作选择；论文报告 Cornell 抓取检测准确率 98.7%，实机挑战场景抓取成功率 94.6%–95.4%。</p>
+            </div>
+            <span style="color: rgba(255,255,255,0.4); font-size: 20px;">✓</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Technical Skills & Hardware Stack -->
+    <section class="section" id="skills">
+      <div class="section-shell">
+        <header class="section-heading reveal">
+          <p class="section-index">03 / TECHNICAL STACK & HARDWARE DEPLOYMENT</p>
+          <div>
+            <h2>专业技能与硬件平台</h2>
+            <p>具备算法理论研究、深度学习端到端模型部署、Web 全栈监控管控平台研发及多类型机器人硬件实机联调的全链条工程能力。</p>
+          </div>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">⚡</span>
+              深度学习与三维感知
+            </h3>
+            <p>具备从数据清洗、网络架构设计、超参数调优到端侧加速推理的全流程经验；深入钻研 3D/2D 语义分割、局部注意力机制（Slot-Attention）、多模态对齐（CLIP）与 3DGS 空间建模。</p>
+            <div class="skill-tags">
+              <span>PyTorch</span><span>3D Semantic Segmentation</span><span>Slot-Attention</span><span>CLIP</span><span>3D Gaussian Splatting</span>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">☁️</span>
+              点云处理与计算机视觉
+            </h3>
+            <p>熟练运用 Open3D、CloudCompare、OpenCV 与 NumPy；精通三维点云体素滤波、降采样、ICP 配准、超点（Superpoint）划分、法向量估计与视距自适应高效点云渲染。</p>
+            <div class="skill-tags">
+              <span>Open3D</span><span>CloudCompare</span><span>OpenCV</span><span>Point Cloud Registration</span><span>Superpoint</span>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">💻</span>
+              全栈系统开发与云边架构
+            </h3>
+            <p>精通 Linux、Shell 与 Git 团队协作；具备云边协同架构实战经验，基于 Vue3 与 Node.js 研发高可靠 Web 机器人巡检管控台，设计状态机指令队列、WebSocket 双向通信与异常追溯。</p>
+            <div class="skill-tags">
+              <span>Vue3</span><span>Node.js</span><span>Linux / Bash</span><span>Git</span><span>WebSocket</span><span>State Machine</span>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">🤖</span>
+              实机联调与机器人硬件
+            </h3>
+            <p>真机调试与现场部署经验覆盖宇树科技（Unitree Go2 / B2 / G1）、松灵机器人（AgileX）、海康威视双光红外云台、大疆巡检无人机、XArm6 六轴机械臂，精通硬件底层驱动通信与传感器协同。</p>
+            <div class="skill-tags">
+              <span>Unitree Go2/B2/G1</span><span>AgileX</span><span>DJI Drone</span><span>XArm6</span><span>Dual-Light Gimbal</span>
+            </div>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">🧠</span>
+              AI Agent 与前沿研发流
+            </h3>
+            <p>紧密跟进具身智能与大模型辅助工程研发前沿；熟练运用 Prompt Engineering、Agent 自动化工作流、MCP 工具协议扩展与自动化测试约束，极大加速系统搭建与算法调优周期。</p>
+            <div class="skill-tags">
+              <span>LLM Prompting</span><span>Agent Workflow</span><span>MCP Protocols</span><span>Embodied AI</span>
+            </div>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-box reveal">
+            <h3 class="skill-box-title">
+              <span class="icon">🏆</span>
+              综合素养与国际交流
+            </h3>
+            <p>中共党员，具备严谨的科学思维、极客精神与良好的团队协作统筹力；英语六级 CET-6（513分），能无障碍阅读、撰写全英文 SCI 高水平学术论文及国际前沿技术交流。</p>
+            <div class="skill-tags">
+              <span>CET-6 (513)</span><span>Academic Writing</span><span>Team Leadership</span><span>CPC Member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Education & Honors -->
+    <section class="section section-dark" id="about" style="border-bottom: 1px solid var(--line-dark);">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light reveal">
+          <p class="section-index">04 / EDUCATION & HONORS</p>
+          <div>
+            <h2>教育背景与荣誉表彰</h2>
+            <p>扎实工科学术训练与多学科交叉背景，在科技创新竞赛、学业科研与工程实践中屡获嘉奖。</p>
+          </div>
+        </header>
+
+        <!-- Education History Cards -->
+        <div class="edu-detail-grid reveal">
+          <div class="edu-card-dark">
+            <div class="edu-header">
+              <span class="edu-school" style="font-size: 16px; font-weight: 800; color: #fff;">浙江科技大学 (ZUST)</span>
+              <span class="edu-date" style="font-family: var(--mono); color: var(--mint);">2024.09 -- 至今</span>
+            </div>
+            <div class="edu-major" style="color: var(--lime); font-size: 13.5px; font-weight: 700; margin-top: 4px;">机械工程 · 工学硕士在读</div>
+            <div class="edu-courses" style="margin-top: 10px; color: rgba(244,246,239,0.72); font-size: 12px; line-height: 1.6;">
+              <strong>研究方向：</strong>大规模 3D 点云语义感知、空地协同自主巡检、四足/人形机器人高动态运控<br>
+              <strong>主修课程：</strong>数字图像处理、神经网络与机器学习、大数据分析与应用、最优化方法、嵌入式系统、智能控制理论
+            </div>
+          </div>
+
+          <div class="edu-card-dark">
+            <div class="edu-header">
+              <span class="edu-school" style="font-size: 16px; font-weight: 800; color: #fff;">海南大学 (Hainan University)</span>
+              <span class="edu-date" style="font-family: var(--mono); color: var(--mint);">2020.09 -- 2024.06</span>
+            </div>
+            <div class="edu-major" style="color: var(--lime); font-size: 13.5px; font-weight: 700; margin-top: 4px;">软件工程 · 工学学士</div>
+            <div class="edu-courses" style="margin-top: 10px; color: rgba(244,246,239,0.72); font-size: 12px; line-height: 1.6;">
+              <strong>知识体系：</strong>深厚计算机软件基础、数据结构与算法设计、机器视觉算法与 Web 系统工程<br>
+              <strong>主修课程：</strong>数据结构与算法、机器学习、计算机视觉、程序设计基础、操作系统、数据库系统原理、Web系统架构
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards & Honors Grid -->
+        <h3 class="reveal" style="font-size: 18px; margin: 0 0 16px; color: #fff; letter-spacing: -0.01em;">荣誉表彰与学科竞赛</h3>
+        <div class="awards-list">
+          <div class="award-item reveal">
+            <span class="award-icon">🏅</span>
+            <div>
+              <div class="award-title">第三届全国大学生低碳循环科技创新大赛 · 全国三等奖</div>
+              <div class="award-sub">国家级科技创新竞赛 · 智能软硬件系统设计</div>
+            </div>
+          </div>
+
+          <div class="award-item reveal">
+            <span class="award-icon">🎖️</span>
+            <div>
+              <div class="award-title">浙江科技大学 · 一等学业奖学金</div>
+              <div class="award-sub">综合学业表现与学术科研排名前列 · 2024 -- 2025</div>
+            </div>
+          </div>
+
+          <div class="award-item reveal">
+            <span class="award-icon">⭐</span>
+            <div>
+              <div class="award-title">校级优秀班干部 & 校三好学生</div>
+              <div class="award-sub">学生工作统筹与优良学术作风表彰 · 中共党员</div>
+            </div>
+          </div>
+
+          <div class="award-item reveal">
+            <span class="award-icon">🌟</span>
+            <div>
+              <div class="award-title">扬州市大学生暑期实习项目 · 优秀实习生</div>
+              <div class="award-sub">工程实践与企事业单位落地项目考核优秀</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell">
+      <!-- Institutional & Laboratory Affiliations -->
+      <div class="footer-affiliations reveal">
+        <p class="footer-affiliations-title">RESEARCH AFFILIATIONS & INSTITUTES · 科研归属与合作基地</p>
+        <div class="affiliations-logos">
+          <!-- School Logo: 浙江科技大学 -->
+          <div class="affiliation-item" title="浙江科技大学 Zhejiang University of Science and Technology">
+            <img src="logo_school.png" alt="浙江科技大学 Zhejiang University of Science and Technology" class="affil-logo school-logo">
+          </div>
+          <!-- Lab Logo 1: 中德联合机器视觉研究所 -->
+          <div class="affiliation-item" title="中德联合机器视觉研究所 Chinesisch-Deutsche Joint Institut für Bildverarbeitung">
+            <img src="logo_lab.png" alt="中德联合机器视觉研究所 Chinesisch-Deutsche Joint Institut für Bildverarbeitung" class="affil-logo lab-logo">
+          </div>
+          <!-- Lab Logo 2: 浙江省智能机器人国际科技合作基地 -->
+          <div class="affiliation-item" title="浙江省智能机器人国际科技合作基地 Zhejiang International Sci &Tech Cooperation Base of Intelligent Robotics">
+            <img src="logo_lab1.png" alt="浙江省智能机器人国际科技合作基地 Zhejiang International Sci &Tech Cooperation Base of Intelligent Robotics" class="affil-logo lab-base-logo">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          <p style="font-weight: 700; color: #fff; font-size: 13.5px; margin: 0 0 4px;">© <span id="year">2026</span> Tianshuai Jiang · Academic & Robotics Portfolio</p>
+          <p style="margin: 0; font-size: 11.5px; color: rgba(255,255,255,0.5);">Large-Scale 3D Point Cloud Perception · Heterogeneous Swarm Robotics · Embodied Locomotion & Manipulation</p>
+        </div>
+        <div class="footer-contact">
+          <p style="margin: 0;">Contact: <a href="mailto:aviciwick@gmail.com">aviciwick@gmail.com</a> | <a href="https://github.com/Aviciwick" target="_blank" rel="noopener">GitHub: @Aviciwick</a> | <a href="#top">Back to Top ↑</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
